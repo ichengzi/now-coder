@@ -1,12 +1,13 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.InteropServices;
 using System.Text;
 
 namespace test
 {
     // type parameter T in angle brackets
-    public class GenericList<T>
+    public class GenericList<T> where T:struct, IComparable
     {
         // The nested class is also generic on T.
         private class Node
@@ -48,50 +49,34 @@ namespace test
 
     class Program
     {
-        //static void Main()
-        //{
-        //    // int is the type argument
-        //    GenericList<int> list = new GenericList<int>();
-
-        //    for (int x = 0; x < 10; x++)
-        //    {
-        //        list.AddHead(x);
-        //    }
-
-        //    foreach (int i in list)
-        //    { 
-        //        System.Console.Write(i + " ");
-        //    }
-        //    System.Console.WriteLine("\nDone");
-
-        //    System.Console.Read();
-        //    System.Console.Read();
-        //    System.Console.Read();
-        //}
-
         static void Main()
         {
-            ArrayList list = new ArrayList();
-            list.Add(5);
-            list.Add(7);
-            Example(list);
-        }
+            // int is the type argument
+            GenericList<int> list = new GenericList<int>();
 
-        static void Example(ArrayList list)
-        {
-            list.AddRange(list);
-
-            list.Add("aaa");
-            list.Add("ccz");
-
-            new List<int>().BinarySearch(2);
-
-            foreach (var i in list)
+            for (int x = 0; x < 10; x++)
             {
-                Console.WriteLine(i);
+                list.AddHead(x);
             }
 
-            Console.Read();
+            foreach (int i in list)
+            {
+                System.Console.Write(i + " ");
+            }
+            System.Console.WriteLine("\nDone");
+            //Console.WriteLine(f(5));//递归调用
+
+            System.Console.Read();
+            System.Console.Read();
+            System.Console.Read();
         }
-    } 
+
+        static int f(int num)
+        {
+            if (num < 2)
+                return num;
+            else
+                return f(num - 1) + f(num - 2);
+        }
+    }
 }
