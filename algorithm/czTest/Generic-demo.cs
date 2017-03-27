@@ -49,7 +49,7 @@ namespace test
 
     class Program
     {
-        static void Main()
+        static void Main1()
         {
             // int is the type argument
             GenericList<int> list = new GenericList<int>();
