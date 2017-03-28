@@ -9,7 +9,7 @@ namespace czTest
 {
     class MutiThread_demo
     {
-        public static void Main()
+        public static void Main1()
         {
             //==============使用Thread
             Thread t1 = new Thread(new ThreadStart(TestMethod));
