@@ -49,10 +49,14 @@
     <Compile Include="6-MutiThread-demo.cs" />
     <Compile Include="5-pointer-demo.cs" />
     <Compile Include="7-delegate-demo.cs" />
+    <Compile Include="8-lock-demo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="4-yield-demo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="17monipdb.dat">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
     <None Include="App.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

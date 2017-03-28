@@ -16,7 +16,7 @@ namespace czTest
          * https://msdn.microsoft.com/en-us/library/2e08f6yc(v=vs.110).aspx
          */
 
-        static void Main(string[] args)
+        static void Main1(string[] args)
         {
             MyDelegate mydelegate = new MyDelegate(HelloPeople);
             IAsyncResult result = mydelegate.BeginInvoke("chengzi", TestCallback, "Callback Param");
