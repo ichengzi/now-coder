@@ -8,7 +8,7 @@ namespace czTest
 {
     class pointer_demo
     {
-        public static void Main()
+        public static void Main1()
         {
             //// Normal pointer to an object.  
             //int[] a = new int[5] { 10, 20, 30, 40, 50 };
