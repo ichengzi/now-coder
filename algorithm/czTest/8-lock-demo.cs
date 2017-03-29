@@ -16,8 +16,12 @@ namespace IP
         // 2. lock以后在执行codeB的期间其他线程不能调用codeB，也不能使用objectA。
         // 3. 执行完codeB之后释放objectA，并且codeB可以被其他线程访问。
 
-        private static void Main(string[] args)
+        private static void Main1(string[] args)
         {
+            var a = new Int32();
+            var b = default(Int32);
+            var c = a == b;
+
             IP.EnableFileWatch = true;
             IP.Load("17monipdb.dat");
 
