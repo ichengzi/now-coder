@@ -8,7 +8,7 @@ namespace czTest
 {
     class ref_demo
     {
-        static void Main(string[] args)
+        static void Main1(string[] args)
         {
             StringBuilder sb = new StringBuilder("1");
 
