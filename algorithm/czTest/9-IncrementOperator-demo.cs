@@ -10,7 +10,7 @@ namespace czTest
 {
     class IncrementOperator_demo
     {
-        public static void Main()
+        public static void Main1()
         {
             int i = 0;
             show(i++); //0,先传值，再自增
