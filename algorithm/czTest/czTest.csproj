@@ -51,6 +51,7 @@
     <Compile Include="7-delegate-demo.cs" />
     <Compile Include="8-lock-demo.cs" />
     <Compile Include="9-IncrementOperator-demo.cs" />
+    <Compile Include="happendWhenCallNew.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="4-yield-demo.cs" />
     <Compile Include="x1-ref-demo.cs" />

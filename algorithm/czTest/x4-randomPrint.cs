@@ -10,6 +10,7 @@ namespace czTest
     {
         public static void Main1()
         {
+            var a = new Int32();
             var ran = new Random();
             var nums1 = new int[] {1, 2, 3, 4, 5, 6};
 
